@@ -8,18 +8,16 @@ class Deck
     @ranks = ['ace', '2', '3', '4', '5', '6', '7', '8',
             '9', '10', 'jack', 'queen', 'king']
     @suits = ['hearts', 'spades', 'diamonds', 'clubs']
-    @cards = create_cards
+    @cards = []
+    create_cards
   end
 
   def create_cards
-    cards = []
     @ranks.each do |rank|
       @suits.each do |suit|
-        thiscard = Card.new(rank, suit)
-        cards << thiscard.card
+        @cards << Card.new(rank, suit)
       end
     end
-    return cards
 	end
 
   def shuffle!
@@ -28,8 +26,8 @@ class Deck
 
 end
 
-mydeck = Deck.new
-puts mydeck
-puts mydeck.cards
-puts mydeck.shuffle!
+# mydeck = Deck.new
+# puts mydeck
+# puts mydeck.cards
+# puts mydeck.shuffle!
 

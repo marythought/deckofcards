@@ -4,7 +4,7 @@ require "card"
 describe Card do
   it "can initiate" do
     qh = Card.new("queen", "hearts")
-    assert_equal qh.card, "queen of hearts"
+    assert_equal qh.to_s, "queen of hearts"
   end
 
   # it "has a valid suit and rank" do
