@@ -6,7 +6,7 @@ class Deck
 
 	def initialize
     @ranks = ['ace', '2', '3', '4', '5', '6', '7', '8',
-            '9', '10', 'jack', 'queen', 'king']
+              '9', '10', 'jack', 'queen', 'king']
     @suits = ['hearts', 'spades', 'diamonds', 'clubs']
     @cards = []
     create_cards
@@ -26,8 +26,4 @@ class Deck
 
 end
 
-# mydeck = Deck.new
-# puts mydeck
-# puts mydeck.cards
-# puts mydeck.shuffle!
 
