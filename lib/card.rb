@@ -1,5 +1,4 @@
 class Card
-
 attr_accessor :rank, :suit
 
   def initialize(rank, suit)
