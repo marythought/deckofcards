@@ -2,7 +2,6 @@ require "spec_helper"
 require "deck"
 
 describe 'Deck' do
-
   before do
     @mydeck = Deck.new
   end
